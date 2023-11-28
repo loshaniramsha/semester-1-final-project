@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="774.0" prefWidth="1120.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FactoryManage.controller.MadeproductController">
+   <children>
+      <Label layoutX="24.0" layoutY="84.0" prefHeight="270.0" prefWidth="1074.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 40;" />
+      <Label layoutX="333.0" layoutY="4.0" prefHeight="75.0" prefWidth="436.0" text="    Made Product" textFill="#403b3b">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Label>
+      <Text layoutX="85.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Amount">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text layoutX="85.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Id">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text layoutX="92.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Id">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text layoutX="85.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complete Amount">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="txtCompletAmount" layoutX="307.0" layoutY="285.0" prefHeight="24.0" prefWidth="276.0" />
+      <Label layoutX="42.0" layoutY="366.0" prefHeight="387.0" prefWidth="1058.0" style="-fx-background-radius: 35; -fx-background-color: #f1f2f6;" />
+      <TableView fx:id="tblMadeProduct" layoutX="75.0" layoutY="440.0" prefHeight="270.0" prefWidth="995.0">
+        <columns>
+          <TableColumn fx:id="colTargetAmount" prefWidth="256.9999694824219" text="Target Amount" />
+          <TableColumn fx:id="colproductId" prefWidth="278.0" text="Product Id" />
+            <TableColumn fx:id="colEmployeeId" prefWidth="210.0" text="Employee Id" />
+            <TableColumn fx:id="colCompleteAmount" prefWidth="249.0" text="Complete Amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="762.0" layoutY="101.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 20;" text="Save" />
+      <Button layoutX="762.0" layoutY="158.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 20;" text="Delete" />
+      <Button layoutX="297.0" layoutY="376.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="40.0" prefWidth="295.0" style="-fx-background-color: #7f8fa6; -fx-background-radius: 20;" text="Search" />
+      <Button layoutX="762.0" layoutY="219.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 20;" text="Update" />
+      <Button layoutX="769.0" layoutY="280.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 20;" text="Clear" textFill="#2f2828" />
+      <ComboBox fx:id="cmbTagetamount" layoutX="309.0" layoutY="162.0" prefHeight="24.0" prefWidth="270.0" />
+      <ComboBox fx:id="cmbProductId" layoutX="309.0" layoutY="102.0" prefHeight="24.0" prefWidth="270.0" />
+      <ComboBox fx:id="cmbEmployeeId" layoutX="309.0" layoutY="225.0" prefHeight="24.0" prefWidth="270.0" />
+      <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="772.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-save-48%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="777.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="772.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="31.0" layoutX="777.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="24.0" layoutY="14.0" onMouseClicked="#lblbackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/img_32.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

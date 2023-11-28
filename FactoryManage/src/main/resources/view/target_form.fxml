@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="774.0" prefWidth="1120.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FactoryManage.controller.TargetController">
+   <children>
+      <Label layoutX="419.0" prefHeight="47.0" prefWidth="215.0" text="Target" textFill="#323030">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="95.0" prefHeight="244.0" prefWidth="1020.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
+      <Text fill="#1b0f0f" layoutX="66.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Id" wrappingWidth="109.8173828125">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="textTargetId" layoutX="206.0" layoutY="119.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter id" />
+      <Text fill="#1e1d1d" layoutX="58.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Amount" wrappingWidth="185.8173828125">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="textTargetAmount" layoutX="206.0" layoutY="187.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter amount" />
+      <Text fill="#1e1a1a" layoutX="549.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receive Date" wrappingWidth="170.9999999999999">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="textReceiveDate" layoutX="691.0" layoutY="187.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter receive date" />
+      <Text fill="#212220" layoutX="549.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Date" wrappingWidth="170.99999999999994">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Label layoutX="42.0" layoutY="352.0" prefHeight="331.0" prefWidth="1026.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
+      <TextField fx:id="textSendDate" layoutX="691.0" layoutY="236.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter send date" />
+      <TableView fx:id="tblTarget" layoutX="59.0" layoutY="381.0" prefHeight="281.0" prefWidth="981.0">
+        <columns>
+          <TableColumn fx:id="colTargetId" prefWidth="242.0" text="Target Id" />
+          <TableColumn fx:id="colTargetAmount" prefWidth="301.0" text="Target Amount" />
+            <TableColumn fx:id="colReceiveDate" prefWidth="180.0" text="Receive Date" />
+            <TableColumn fx:id="colSendDate" prefWidth="296.0" text="Send Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="930.0" layoutY="300.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #7f8fa6;" text="Clear" textFill="#f5ebeb" />
+      <Button layoutX="720.0" layoutY="300.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #FCAEAE;" text="Delete" />
+      <Button layoutX="828.0" layoutY="300.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #E0F4FF;" text="Update" textFill="#252020" />
+      <Button layoutX="617.0" layoutY="300.0" mnemonicParsing="false" mouseTransparent="true" onAction="#saveOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #B4BDFF;" text="Save" />
+      <Button layoutX="536.0" layoutY="118.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="31.0" prefWidth="186.0" style="-fx-background-radius: 20; -fx-background-color: #dfe4ea;" text="Search" />
+      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="16.0" layoutY="17.0" onMouseClicked="#lblBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/img_32.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

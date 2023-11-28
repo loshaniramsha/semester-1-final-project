@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="774.0" prefWidth="1120.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FactoryManage.controller.CountmaterialController">
+   <children>
+      <Label layoutX="376.0" layoutY="2.0" prefHeight="75.0" prefWidth="434.0" text="  Count Material">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="91.0" prefHeight="227.0" prefWidth="977.0" style="-fx-background-color: #f5f6fa; -fx-background-radius: 35;" />
+      <Text layoutX="121.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Material Id">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text layoutX="121.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Id">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Button layoutX="725.0" layoutY="111.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="24.0" prefWidth="169.0" style="-fx-background-radius: 20; -fx-background-color: #dfe4ea;" text="Save" />
+      <Label layoutX="75.0" layoutY="330.0" prefHeight="373.0" prefWidth="977.0" style="-fx-background-radius: 40; -fx-background-color: #f5f6fa;" />
+      <Text layoutX="121.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount Used">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="txtAmountUsed" layoutX="286.0" layoutY="249.0" prefHeight="24.0" prefWidth="240.0" />
+      <TableView fx:id="tblCountmaterial" layoutX="120.0" layoutY="417.0" prefHeight="259.0" prefWidth="881.0">
+        <columns>
+          <TableColumn fx:id="colMaterialId" prefWidth="284.0" text="Material id" />
+          <TableColumn fx:id="colamountUsed" prefWidth="333.0" text="Amount Used" />
+            <TableColumn fx:id="colProductId" prefWidth="263.0" text="Product Id" />
+        </columns>
+      </TableView>
+      <Button layoutX="295.0" layoutY="349.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="24.0" prefWidth="195.0" style="-fx-background-radius: 20; -fx-background-color: #7f8fa6;" text="Search" />
+      <Button layoutX="725.0" layoutY="207.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="24.0" prefWidth="169.0" style="-fx-background-radius: 20; -fx-background-color: #dfe4ea;" text="Update" />
+      <Button layoutX="725.0" layoutY="258.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="24.0" prefWidth="169.0" style="-fx-background-radius: 20; -fx-background-color: #dfe4ea;" text="Delete" />
+      <Button layoutX="725.0" layoutY="159.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="24.0" prefWidth="169.0" style="-fx-background-radius: 20; -fx-background-color: #dfe4ea;" text="Clear" />
+      <ComboBox fx:id="combMaterialId" layoutX="286.0" layoutY="111.0" onAction="#cmbMaterialOnAction" prefHeight="24.0" prefWidth="240.0" />
+      <ComboBox fx:id="combProductId" layoutX="283.0" layoutY="178.0" prefHeight="24.0" prefWidth="246.0" />
+      <ImageView fitHeight="41.0" fitWidth="63.0" layoutX="14.0" layoutY="19.0" onMouseClicked="#lblBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/img_32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="41.0" layoutX="732.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-save-48%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="735.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="735.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="735.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

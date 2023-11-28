@@ -1,0 +1,8 @@
+.loginText {
+    -fx-background-color:  #CAD3C8;
+    -fx-border-color: #38b000;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-text-fill: #000;
+    -fx-font-family: Arial Rounded MT Bold;
+    -fx-font-size: 14px;
+}

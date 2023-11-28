@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="774.0" prefWidth="1120.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FactoryManage.controller.UserController">
+   <children>
+      <Label layoutX="474.0" layoutY="-1.0" prefHeight="45.0" prefWidth="128.0" text="User" textFill="#1e1c1c">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="117.0" prefHeight="280.0" prefWidth="1005.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
+      <TextField fx:id="textuserId" layoutX="206.0" layoutY="148.0" prefHeight="31.0" prefWidth="302.0" promptText="Enter User Id">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <ImageView fitHeight="61.0" fitWidth="96.0" layoutX="1014.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/img_1.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="97.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id" wrappingWidth="91.84912109375">
+         <font>
+            <Font size="23.0" />
+         </font></Text>
+      <TextField fx:id="textName" layoutX="206.0" layoutY="266.0" prefHeight="31.0" prefWidth="302.0" promptText="Enter Name">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <TextField fx:id="textPost" layoutX="206.0" layoutY="204.0" prefHeight="31.0" prefWidth="302.0" promptText="Position">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <Text layoutX="113.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post">
+         <font>
+            <Font size="23.0" />
+         </font></Text>
+      <Text layoutX="112.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="23.0" />
+         </font></Text>
+      <Button layoutX="720.0" layoutY="349.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-background-color: #FCAEAE;" text="Delete">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Text layoutX="602.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Branch">
+         <font>
+            <Font size="23.0" />
+         </font></Text>
+      <TextField fx:id="textBranch" layoutX="720.0" layoutY="220.0" prefHeight="31.0" prefWidth="302.0" promptText="Enter Branch">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <Label layoutX="46.0" layoutY="408.0" prefHeight="310.0" prefWidth="1023.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
+      <Button layoutX="604.0" layoutY="349.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #B4BDFF; -fx-background-radius: 20;" text="Save">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="823.0" layoutY="349.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-background-color: #E0F4FF;" text="Update">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <TableView fx:id="tblUser" layoutX="63.0" layoutY="432.0" prefHeight="270.0" prefWidth="988.0">
+        <columns>
+          <TableColumn fx:id="colUserId" prefWidth="130.0" text="UserId" />
+          <TableColumn fx:id="colPost" prefWidth="183.0" text="Post" />
+            <TableColumn fx:id="colBranch" prefWidth="246.0" text="Branch" />
+            <TableColumn fx:id="colName" prefWidth="243.0" text="Name" />
+            <TableColumn fx:id="colPasswoed" prefWidth="234.0" text="PassWord" />
+        </columns>
+      </TableView>
+      <Button layoutX="546.0" layoutY="148.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="31.0" prefWidth="181.0" style="-fx-background-radius: 20; -fx-background-color: #dfe4ea;" text="Search" textFill="#2f2a2a">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor></Button>
+      <Button layoutX="932.0" layoutY="349.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-background-color: #7f8fa6;" text="Clear" textFill="#f8efef">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="51.0" fitWidth="61.0" layoutX="30.0" layoutY="11.0" onMouseClicked="#lblBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/img_32.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="604.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textPassword" layoutX="724.0" layoutY="281.0" prefHeight="31.0" prefWidth="302.0" promptText="enter password only numbers">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FactoryManage.controller.DashboardController">
+   <children>
+      <Label layoutX="5.0" layoutY="9.0" prefHeight="780.0" prefWidth="246.0" style="-fx-background-color: #747d8c; -fx-background-radius: 30;" />
+      <AnchorPane fx:id="changePain" layoutX="259.0" layoutY="12.0" prefHeight="780.0" prefWidth="1077.0" style="-fx-background-color: #34495e;" />
+      <Button layoutX="8.0" layoutY="62.0" mnemonicParsing="false" onAction="#userOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-radius: 20; -fx-background-color: #f5f6fa;" text="User">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="8.0" layoutY="130.0" mnemonicParsing="false" onAction="#employeeOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-color: #f5f6fa; -fx-background-radius: 20;" text="Employee">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="7.0" layoutY="199.0" mnemonicParsing="false" onAction="#suplierOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-radius: 20; -fx-background-color: #f5f6fa;" text="Supplier">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="7.0" layoutY="268.0" mnemonicParsing="false" onAction="#materialOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-radius: 20; -fx-background-color: #f5f6fa;" text="Material">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="8.0" layoutY="333.0" mnemonicParsing="false" onAction="#scheduleOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-radius: 20; -fx-background-color: #f5f6fa;" text="Schedule">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="5.0" layoutY="402.0" mnemonicParsing="false" onAction="#productOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-radius: 20; -fx-background-color: #f5f6fa;" text="Product">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="5.0" layoutY="473.0" mnemonicParsing="false" onAction="#countMaterialOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-radius: 20; -fx-background-color: #f5f6fa;" text="   Count Material">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="5.0" layoutY="540.0" mnemonicParsing="false" onAction="#targetOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-radius: 20; -fx-background-color: #f5f6fa;" text="Target">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="7.0" layoutY="609.0" mnemonicParsing="false" onAction="#exportableOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-radius: 20; -fx-background-color: #f5f6fa;" text="Export">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="10.0" layoutY="675.0" mnemonicParsing="false" onAction="#madeProductOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-radius: 20; -fx-background-color: #f5f6fa;" text="Made Product">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <ImageView fitHeight="54.0" fitWidth="60.0" layoutX="14.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-user-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="11.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-employee-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="45.0" layoutX="11.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-supplier-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="11.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-item-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="11.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-schedule-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-product-48%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="13.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-product-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="7.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-target-app-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="12.0" layoutY="618.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-export-32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="13.0" layoutY="685.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-product-48%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="85.0" layoutX="96.0" layoutY="733.0" onMouseClicked="#lblBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/img_32.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lblHome" fitHeight="54.0" fitWidth="61.0" layoutX="97.0" layoutY="4.0" onMouseClicked="#lblHomeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/homeicon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
