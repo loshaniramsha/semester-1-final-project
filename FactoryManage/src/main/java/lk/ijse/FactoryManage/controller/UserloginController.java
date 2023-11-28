@@ -9,6 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import lk.ijse.FactoryManage.Mail.Mail;
 import lk.ijse.FactoryManage.dto.UserDto;
 import lk.ijse.FactoryManage.dto.UserloginDto;
 import lk.ijse.FactoryManage.model.UserModel;
@@ -59,6 +60,19 @@ public class UserloginController {
 
             Stage.getWindows();
             stage.centerOnScreen();
+
+
+            //mail send
+
+            Mail mail = new Mail();
+            mail.setMsg("Login successful..!");
+            mail.setTo(usr);
+            mail.setSubject("Factory Manage");
+
+
+            Thread thread = new Thread(mail);
+            thread.start();
+
         } else {
             new Alert(Alert.AlertType.WARNING, "Invalid User").show();}
         } else {

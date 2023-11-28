@@ -17,6 +17,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import lk.ijse.FactoryManage.Mail.Mail;
 import lk.ijse.FactoryManage.dto.EmployeeDto;
 import lk.ijse.FactoryManage.dto.ScheduleDto;
 import lk.ijse.FactoryManage.dto.tm.ScheduleTm;
@@ -169,6 +170,18 @@ public class SheduleController {
 
         for (EmployeeDto employeeDto:employeeDtos){
             String to = employeeDto.getEmail();
+
+
+            Mail mail = new Mail();
+            mail.setMsg(sheduleMassage);
+            mail.setTo(to);
+            mail.setSubject("Factory Manage");
+
+
+            Thread thread = new Thread(mail);
+            thread.start();
+
+            /*
             String from = "loshaniramsha01@gmail.com";
             final String username = "loshaniramsha";
             final String password = "200198@AB";
@@ -204,6 +217,8 @@ public class SheduleController {
             } catch (MessagingException e) {
                 throw new RuntimeException(e);
             }
+
+            */
         }
     }
 

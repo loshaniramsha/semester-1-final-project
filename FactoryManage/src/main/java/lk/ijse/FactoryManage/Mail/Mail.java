@@ -15,7 +15,7 @@ public class Mail implements Runnable{
     private String to;
     private String subject;
 
-    private File file;
+   // private File file;
 
     public void setMsg(String msg) {
         this.msg = msg;
@@ -26,7 +26,7 @@ public class Mail implements Runnable{
     }
 
     public void setFile(File file) {
-        this.file = file;
+      //  this.file = file;
     }
 
     public void setSubject(String subject) {
@@ -58,16 +58,6 @@ public class Mail implements Runnable{
         mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
         mimeMessage.setSubject(this.subject);
         mimeMessage.setText(this.msg);
-
-        MimeBodyPart mimeBodyPart = new MimeBodyPart();
-        mimeBodyPart.attachFile(this.file);
-
-
-        Multipart multipart = new MimeMultipart();
-        multipart.addBodyPart(mimeBodyPart);
-
-        mimeMessage.setContent(multipart);
-
         Transport.send(mimeMessage);
 
         System.out.println("sent");
@@ -78,9 +68,7 @@ public class Mail implements Runnable{
         if (msg != null) {
             try {
                 outMail();
-            } catch (MessagingException e) {
-                throw new RuntimeException(e);
-            } catch (IOException e) {
+            } catch (MessagingException | IOException e) {
                 throw new RuntimeException(e);
             }
         } else {
