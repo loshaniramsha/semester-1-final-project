@@ -18,29 +18,29 @@
             <Font name="System Bold" size="52.0" />
          </font>
       </Label>
-      <Label layoutX="37.0" layoutY="95.0" prefHeight="244.0" prefWidth="1020.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
-      <Text fill="#1b0f0f" layoutX="66.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Id" wrappingWidth="109.8173828125">
+      <Label layoutX="37.0" layoutY="95.0" prefHeight="267.0" prefWidth="1020.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
+      <Text fill="#1b0f0f" layoutX="66.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Id" wrappingWidth="109.8173828125">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="textTargetId" layoutX="206.0" layoutY="119.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter id" />
-      <Text fill="#1e1d1d" layoutX="58.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Amount" wrappingWidth="185.8173828125">
+      <TextField fx:id="textTargetId" layoutX="206.0" layoutY="132.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter id" style="-fx-background-radius: 20;" />
+      <Text fill="#1e1d1d" layoutX="58.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Amount" wrappingWidth="185.8173828125">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="textTargetAmount" layoutX="206.0" layoutY="187.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter amount" />
+      <TextField fx:id="textTargetAmount" layoutX="206.0" layoutY="194.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter amount" style="-fx-background-radius: 20;" />
       <Text fill="#1e1a1a" layoutX="549.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receive Date" wrappingWidth="170.9999999999999">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="textReceiveDate" layoutX="691.0" layoutY="187.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter receive date" />
-      <Text fill="#212220" layoutX="549.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Date" wrappingWidth="170.99999999999994">
+      <TextField fx:id="textReceiveDate" layoutX="691.0" layoutY="187.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter receive date" style="-fx-background-radius: 20;" />
+      <Text fill="#212220" layoutX="549.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Date" wrappingWidth="170.99999999999994">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <Label layoutX="42.0" layoutY="352.0" prefHeight="331.0" prefWidth="1026.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
-      <TextField fx:id="textSendDate" layoutX="691.0" layoutY="236.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter send date" />
-      <TableView fx:id="tblTarget" layoutX="59.0" layoutY="381.0" prefHeight="281.0" prefWidth="981.0">
+      <Label layoutX="42.0" layoutY="379.0" prefHeight="331.0" prefWidth="1026.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
+      <TextField fx:id="textSendDate" layoutX="691.0" layoutY="250.0" prefHeight="31.0" prefWidth="287.0" promptText="Enter send date" style="-fx-background-radius: 20;" />
+      <TableView fx:id="tblTarget" layoutX="59.0" layoutY="408.0" prefHeight="281.0" prefWidth="981.0">
         <columns>
           <TableColumn fx:id="colTargetId" prefWidth="242.0" text="Target Id" />
           <TableColumn fx:id="colTargetAmount" prefWidth="301.0" text="Target Amount" />
@@ -48,10 +48,10 @@
             <TableColumn fx:id="colSendDate" prefWidth="296.0" text="Send Date" />
         </columns>
       </TableView>
-      <Button layoutX="930.0" layoutY="300.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #7f8fa6;" text="Clear" textFill="#f5ebeb" />
-      <Button layoutX="720.0" layoutY="300.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #FCAEAE;" text="Delete" />
-      <Button layoutX="828.0" layoutY="300.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #E0F4FF;" text="Update" textFill="#252020" />
-      <Button layoutX="617.0" layoutY="300.0" mnemonicParsing="false" mouseTransparent="true" onAction="#saveOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #B4BDFF;" text="Save" />
+      <Button layoutX="930.0" layoutY="317.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #7f8fa6;" text="Clear" textFill="#f5ebeb" />
+      <Button layoutX="720.0" layoutY="317.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #FCAEAE;" text="Delete" />
+      <Button layoutX="828.0" layoutY="317.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #E0F4FF;" text="Update" textFill="#252020" />
+      <Button layoutX="617.0" layoutY="317.0" mnemonicParsing="false" mouseTransparent="true" onAction="#saveOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-radius: 30; -fx-background-color: #B4BDFF;" text="Save" />
       <Button layoutX="536.0" layoutY="118.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="31.0" prefWidth="186.0" style="-fx-background-radius: 20; -fx-background-color: #dfe4ea;" text="Search" />
       <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="16.0" layoutY="17.0" onMouseClicked="#lblBackOnAction" pickOnBounds="true" preserveRatio="true">
          <image>

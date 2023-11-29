@@ -4,12 +4,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import lk.ijse.FactoryManage.Regex.Regex;
 import lk.ijse.FactoryManage.dto.CountmaterialDto;
 import lk.ijse.FactoryManage.dto.MaterialDto;
 import lk.ijse.FactoryManage.dto.ProductDto;
@@ -18,6 +20,7 @@ import lk.ijse.FactoryManage.model.MaterialModel;
 import lk.ijse.FactoryManage.model.ProductModel;
 
 import java.io.IOException;
+import java.net.URL;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -79,7 +82,8 @@ public class CountmaterialController {
             String matirialId = combMaterialId.getValue();
             String productId = combProductId.getValue();
             String ammountuse = txtAmountUsed.getText();
-        CountmaterialDto countmaterialDto = new CountmaterialDto(matirialId, productId, ammountuse);
+
+            CountmaterialDto countmaterialDto = new CountmaterialDto(matirialId, productId, ammountuse);
 
         if (CountmaterialModel.save(countmaterialDto)){
             clearFields();
@@ -166,8 +170,20 @@ public class CountmaterialController {
         stage.centerOnScreen();
     }
 
-    public void cmbMaterialOnAction(ActionEvent event) {
+    public void cmbMaterialOnAction(ActionEvent event) throws Exception {
+        URL resource = getClass().getResource("/view/dashboard2_form.fxml");
+        assert resource != null;
+        try {
+            Parent load = FXMLLoader.load(resource);
+            root.getChildren().clear();
+            root.getChildren().add(load);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
+
 
     public void lblBackOnAction(MouseEvent mouseEvent) {
     }

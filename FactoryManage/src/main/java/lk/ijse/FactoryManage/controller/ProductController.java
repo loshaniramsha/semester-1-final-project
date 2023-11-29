@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
@@ -23,6 +24,7 @@ import net.sf.jasperreports.view.JasperViewer;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -194,8 +196,21 @@ public class ProductController {
         }
     }
 
-    public void lblBackOnAction(MouseEvent mouseEvent) {
+    public void lblBackOnAction(MouseEvent mouseEvent) throws Exception {
+        URL resource = getClass().getResource("/view/dashboard2_form.fxml");
+        assert resource != null;
+        try {
+            Parent load = FXMLLoader.load(resource);
+            root.getChildren().clear();
+            root.getChildren().add(load);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
+
+
 
     public void reportOnAction(ActionEvent actionEvent) throws Exception {
         InputStream resourceAsStream = getClass().getResourceAsStream("/report/products.jrxml");

@@ -4,16 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42f9471c-49df-46b5-a2f0-ea3fdfa7e3a3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/FactoryManage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/Mail/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/Mail/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/SheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/SheduleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/UserloginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/UserloginController.java" afterDir="false" />
+    <list default="true" id="42f9471c-49df-46b5-a2f0-ea3fdfa7e3a3" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e23dafe-d20f-4645-90f3-89e4dd84dac5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e23dafe-d20f-4645-90f3-89e4dd84dac5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/CountmaterialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/CountmaterialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/Dashboard2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/Dashboard2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/ExportableproductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/ExportableproductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/MadeproductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/MadeproductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/MaterialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/MaterialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/SupplierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/TargetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/TargetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/model/EmployeeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/model/EmployeeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/countmaterial_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/countmaterial_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/dashboard2_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/dashboard2_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/employee_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/employee_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/exportableproduct_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/exportableproduct_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/madeproduct_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/madeproduct_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/material_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/material_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/product_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/product_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/schedule_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/schedule_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/supplier_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/supplier_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/target_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/target_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/user_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/user_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/userlogin_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/userlogin_form.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,25 +58,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/working directory/sem 1 final/FactoryManage new",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/working directory/sem 1 final/FactoryManage new&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AppInitializerWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lk.ijse.FactoryManage.AppInitializerWrapper" />
@@ -77,7 +108,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701163555220</updated>
-      <workItem from="1701163556210" duration="3184000" />
+      <workItem from="1701163556210" duration="5236000" />
+      <workItem from="1701190757097" duration="3961000" />
+      <workItem from="1701227896181" duration="13133000" />
+      <workItem from="1701248074131" duration="817000" />
+      <workItem from="1701249369921" duration="2174000" />
+      <workItem from="1701251674381" duration="151000" />
+      <workItem from="1701266771508" duration="2159000" />
     </task>
     <servers />
   </component>

@@ -14,7 +14,7 @@
 
 <AnchorPane fx:id="root" prefHeight="774.0" prefWidth="1120.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FactoryManage.controller.SupplierController">
    <children>
-      <Label layoutX="35.0" layoutY="84.0" prefHeight="249.0" prefWidth="1009.0" style="-fx-background-color: white; -fx-background-radius: 35;">
+      <Label layoutX="35.0" layoutY="84.0" prefHeight="274.0" prefWidth="1009.0" style="-fx-background-color: white; -fx-background-radius: 35;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Label>
@@ -28,7 +28,7 @@
             <Font size="21.0" />
          </font></Text>
       <TextField fx:id="textSupId" layoutX="211.0" layoutY="131.0" prefHeight="24.0" prefWidth="250.0" style="-fx-background-radius: 30;" />
-      <Text layoutX="92.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="137.77978515625">
+      <Text layoutX="63.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="137.77978515625">
          <font>
             <Font size="20.0" />
          </font></Text>
@@ -36,32 +36,32 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></TextField>
-      <Text layoutX="526.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ammount Brought" wrappingWidth="224.92626953125">
+      <Text layoutX="526.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ammount Brought" wrappingWidth="224.92626953125">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <Label layoutX="34.0" layoutY="355.0" prefHeight="338.0" prefWidth="1009.0" style="-fx-background-color: #f5f6fa; -fx-background-radius: 30;" />
+      <Label layoutX="34.0" layoutY="389.0" prefHeight="338.0" prefWidth="1009.0" style="-fx-background-color: #f5f6fa; -fx-background-radius: 30;" />
       <TextField fx:id="textAmountbrought" layoutX="709.0" layoutY="176.0" prefHeight="31.0" prefWidth="283.0" style="-fx-background-radius: 30;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></TextField>
-      <Text layoutX="602.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="137.77978515625">
+      <Text layoutX="526.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="137.77978515625">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="textDate" layoutX="709.0" layoutY="236.0" prefHeight="31.0" prefWidth="283.0" style="-fx-background-radius: 30;">
+      <TextField fx:id="textDate" layoutX="714.0" layoutY="236.0" prefHeight="31.0" prefWidth="283.0" style="-fx-background-radius: 30;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></TextField>
-      <Button layoutX="592.0" layoutY="291.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #B4BDFF; -fx-background-radius: 20;" text="Save">
+      <Button layoutX="592.0" layoutY="315.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #B4BDFF; -fx-background-radius: 20;" text="Save">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor></Button>
-      <Button layoutX="705.0" layoutY="291.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-background-color: #E0F4FF;" text="Update">
+      <Button layoutX="705.0" layoutY="315.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 20; -fx-background-color: #E0F4FF;" text="Update">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor></Button>
-      <Button layoutX="813.0" layoutY="290.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #FCAEAE; -fx-background-radius: 20;" text="Delete">
+      <Button layoutX="813.0" layoutY="314.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #FCAEAE; -fx-background-radius: 20;" text="Delete">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor></Button>
@@ -69,7 +69,7 @@
          <cursor>
             <Cursor fx:constant="WAIT" />
          </cursor></Button>
-      <TableView fx:id="tblSupplier" layoutX="63.0" layoutY="416.0" prefHeight="238.0" prefWidth="937.0">
+      <TableView fx:id="tblSupplier" layoutX="69.0" layoutY="415.0" prefHeight="274.0" prefWidth="937.0">
         <columns>
           <TableColumn fx:id="colSupplierId" prefWidth="225.0" text="Supplier Id" />
           <TableColumn fx:id="colName" prefWidth="269.0" text="Name" />
@@ -77,7 +77,7 @@
             <TableColumn fx:id="colDate" prefWidth="205.0" text="Date" />
         </columns>
       </TableView>
-      <Button layoutX="917.0" layoutY="291.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #7f8fa6; -fx-background-radius: 20;" text="Clear" textFill="#f5efef">
+      <Button layoutX="917.0" layoutY="315.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #7f8fa6; -fx-background-radius: 20;" text="Clear" textFill="#f5efef">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor></Button>

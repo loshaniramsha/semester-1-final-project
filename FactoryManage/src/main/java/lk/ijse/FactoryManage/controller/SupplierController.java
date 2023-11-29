@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
@@ -17,6 +18,7 @@ import lk.ijse.FactoryManage.dto.SupplierDto;
 import lk.ijse.FactoryManage.model.SupplierModel;
 
 import java.io.IOException;
+import java.net.URL;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -69,6 +71,8 @@ public class SupplierController {
         String name = textName.getText();
         String ammountbrought = textAmountbrought.getText();
         String date = textDate.getText();
+
+
         var Dto = new SupplierDto(supId, name, ammountbrought, date);
         boolean issaved= SupplierModel.saveSupplier(Dto);
         if (issaved){
@@ -170,6 +174,18 @@ public class SupplierController {
         clerField();
     }
 
-    public void lblBackOnAction(MouseEvent mouseEvent) {
+    public void lblBackOnAction(MouseEvent mouseEvent) throws Exception {
+
+        URL resource = getClass().getResource("/view/dashboard2_form.fxml");
+        assert resource != null;
+        try {
+        Parent load = FXMLLoader.load(resource);
+        root.getChildren().clear();
+        root.getChildren().add(load);
+
+    } catch (IOException e) {
+        throw new RuntimeException(e);
+    }
+
     }
 }

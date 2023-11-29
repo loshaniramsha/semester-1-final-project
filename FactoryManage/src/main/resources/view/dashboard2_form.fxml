@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="774.0" prefWidth="1120.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.FactoryManage.controller.Dashboard2Controller">
    <children>
@@ -18,7 +19,7 @@
       <Label layoutX="80.0" layoutY="517.0" prefHeight="189.0" prefWidth="399.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
       <Label layoutX="80.0" layoutY="307.0" prefHeight="189.0" prefWidth="399.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
       <Label layoutX="542.0" layoutY="96.0" prefHeight="189.0" prefWidth="500.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35;" />
-      <BarChart layoutX="504.0" layoutY="300.0" prefHeight="417.0" prefWidth="538.0">
+      <BarChart layoutX="504.0" layoutY="319.0" prefHeight="417.0" prefWidth="538.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
@@ -31,7 +32,7 @@
             <Font size="49.0" />
          </font>
       </Label>
-      <Label fx:id="lblProduct" layoutX="328.0" layoutY="119.0" text="03">
+      <Label fx:id="lblProduct" layoutX="328.0" layoutY="119.0">
          <font>
             <Font size="96.0" />
          </font>
@@ -41,7 +42,7 @@
             <Font size="49.0" />
          </font>
       </Label>
-      <Label fx:id="lblEmployee" layoutX="338.0" layoutY="328.0" text="20">
+      <Label fx:id="lblEmployee" layoutX="338.0" layoutY="328.0">
          <font>
             <Font size="96.0" />
          </font>
@@ -51,7 +52,7 @@
             <Font size="49.0" />
          </font>
       </Label>
-      <Label fx:id="lblSchedulePlane" layoutX="116.0" layoutY="612.0" prefHeight="40.0" prefWidth="342.0" text="plan">
+      <Label fx:id="lblSchedulePlane" layoutX="116.0" layoutY="612.0" prefHeight="40.0" prefWidth="342.0">
          <font>
             <Font size="28.0" />
          </font>
@@ -71,5 +72,16 @@
             <Font size="34.0" />
          </font>
       </Label>
+      <Label layoutX="582.0" layoutY="367.0" prefHeight="343.0" prefWidth="35.0" style="-fx-background-color: #506266;" />
+      <Label layoutX="653.0" layoutY="505.0" prefHeight="206.0" prefWidth="35.0" style="-fx-background-color: #506266;" />
+      <Label layoutX="725.0" layoutY="495.0" prefHeight="215.0" prefWidth="35.0" style="-fx-background-color: #506266;" />
+      <Label layoutX="801.0" layoutY="529.0" prefHeight="181.0" prefWidth="35.0" style="-fx-background-color: #506266;" />
+      <Label layoutX="875.0" layoutY="486.0" prefHeight="224.0" prefWidth="35.0" style="-fx-background-color: #506266;" />
+      <Label layoutX="948.0" layoutY="421.0" prefHeight="289.0" prefWidth="35.0" style="-fx-background-color: #506266;" />
+      <Text layoutX="725.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Work Rate" wrappingWidth="98.111328125">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

@@ -26,44 +26,44 @@
             <Image url="@../image/img_27.png" />
          </image>
       </ImageView>
-      <Text layoutX="83.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee id">
+      <Text layoutX="76.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee id">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="txtEmployeeId" layoutX="260.0" layoutY="90.0" prefHeight="24.0" prefWidth="225.0" style="-fx-background-radius: 20;" />
-      <TextField fx:id="txtType" layoutX="260.0" layoutY="173.0" prefHeight="24.0" prefWidth="225.0" style="-fx-background-radius: 20;" />
-      <Text layoutX="83.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
+      <TextField fx:id="txtEmployeeId" layoutX="254.0" layoutY="103.0" prefHeight="31.0" prefWidth="242.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txtType" layoutX="254.0" layoutY="203.0" prefHeight="31.0" prefWidth="242.0" style="-fx-background-radius: 20;" />
+      <Text layoutX="82.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="txtEmail" layoutX="260.0" layoutY="274.0" prefHeight="24.0" prefWidth="225.0" style="-fx-background-radius: 20;" />
-      <Text layoutX="83.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+      <TextField fx:id="txtEmail" layoutX="742.0" layoutY="173.0" prefHeight="31.0" prefWidth="265.0" style="-fx-background-radius: 20;" />
+      <Text layoutX="82.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="txtName" layoutX="260.0" layoutY="129.0" prefHeight="24.0" prefWidth="225.0" style="-fx-background-radius: 20;" />
-      <Text layoutX="85.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+      <TextField fx:id="txtName" layoutX="254.0" layoutY="153.0" prefHeight="31.0" prefWidth="242.0" style="-fx-background-radius: 20;" />
+      <Text layoutX="621.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <Text layoutX="83.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PhoneNumber">
+      <Text layoutX="76.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PhoneNumber">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="txtPhoneNumber" layoutX="260.0" layoutY="221.0" prefHeight="24.0" prefWidth="225.0" style="-fx-background-radius: 20;" />
-      <Text layoutX="87.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserId">
+      <TextField fx:id="txtPhoneNumber" layoutX="254.0" layoutY="252.0" prefHeight="31.0" prefWidth="242.0" style="-fx-background-radius: 20;" />
+      <Text layoutX="617.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserId">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <Text layoutX="85.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ScheduleId">
+      <Text layoutX="616.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ScheduleId">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <Button layoutX="675.0" layoutY="177.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="206.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 35;" text="Delete" />
-      <Button layoutX="675.0" layoutY="255.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="206.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 35;" text="Update" textFill="#2f2a2a" />
-      <Button layoutX="261.0" layoutY="432.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="24.0" prefWidth="185.0" style="-fx-background-color: #ced6e0; -fx-background-radius: 35;" text="Search" />
-      <Button layoutX="672.0" layoutY="328.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="31.0" prefWidth="206.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 35;" text="Clear" />
-      <TableView fx:id="tblEmployee" layoutX="97.0" layoutY="480.0" prefHeight="225.0" prefWidth="942.0">
+      <Button layoutX="668.0" layoutY="362.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #FCAEAE; -fx-background-radius: 35;" text="Delete" />
+      <Button layoutX="796.0" layoutY="362.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="97.0" style="-fx-background-color: #E0F4FF; -fx-background-radius: 35;" text="Update" textFill="#2f2a2a" />
+      <Button layoutX="553.0" layoutY="100.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="24.0" prefWidth="185.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 35;" text="Search" />
+      <Button layoutX="917.0" layoutY="362.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #7f8fa6; -fx-background-radius: 35;" text="Clear" />
+      <TableView fx:id="tblEmployee" layoutX="97.0" layoutY="458.0" prefHeight="225.0" prefWidth="942.0">
         <columns>
           <TableColumn fx:id="colEmoId" prefWidth="113.0" text="EmploId" />
           <TableColumn fx:id="colName" prefWidth="109.0" text="Name" />
@@ -74,33 +74,13 @@
             <TableColumn fx:id="colScheduleId" prefWidth="131.0" text="ScheduleId" />
         </columns>
       </TableView>
-      <ComboBox fx:id="cmbUserId" layoutX="260.0" layoutY="320.0" prefHeight="24.0" prefWidth="225.0" style="-fx-background-radius: 20;" />
-      <ComboBox fx:id="cmbScheduleId" layoutX="260.0" layoutY="367.0" prefHeight="24.0" prefWidth="225.0" style="-fx-background-radius: 20;" />
-      <Button layoutX="668.0" layoutY="102.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="31.0" prefWidth="206.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 35;" text="Save" />
-      <ImageView fitHeight="31.0" fitWidth="55.0" layoutX="675.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
+      <ComboBox fx:id="cmbUserId" layoutX="749.0" layoutY="228.0" prefHeight="31.0" prefWidth="258.0" style="-fx-background-radius: 20;" />
+      <ComboBox fx:id="cmbScheduleId" layoutX="749.0" layoutY="283.0" prefHeight="31.0" prefWidth="258.0" style="-fx-background-radius: 20;" />
+      <Button layoutX="548.0" layoutY="362.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="31.0" prefWidth="97.0" style="-fx-background-color: #B4BDFF; -fx-background-radius: 35;" text="Save" />
+      <ImageView fitHeight="31.0" fitWidth="55.0" layoutX="637.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="18.0" layoutY="16.0" onMouseClicked="#lblBackOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/img_32.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="53.0" layoutX="677.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-save-48%20(1).png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="677.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_1.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="681.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_2.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="681.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_4.png" />
          </image>
       </ImageView>
    </children>

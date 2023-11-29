@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -18,60 +19,70 @@
             <Font name="System Bold" size="52.0" />
          </font>
       </Label>
-      <Label layoutX="45.0" layoutY="84.0" prefHeight="200.0" prefWidth="1030.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 40;" />
-      <Label layoutX="51.0" layoutY="306.0" prefHeight="383.0" prefWidth="1022.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 40;" />
-      <TableView fx:id="tblSchedule" layoutX="226.0" layoutY="360.0" prefHeight="311.0" prefWidth="673.0">
+      <Label layoutX="45.0" layoutY="93.0" prefHeight="279.0" prefWidth="1030.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 40;" />
+      <Label layoutX="51.0" layoutY="390.0" prefHeight="352.0" prefWidth="1022.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 40;" />
+      <TableView fx:id="tblSchedule" layoutX="105.0" layoutY="428.0" prefHeight="260.0" prefWidth="917.0">
         <columns>
-          <TableColumn fx:id="colDate" prefWidth="184.0" text="Date" />
-          <TableColumn fx:id="colPlane" prefWidth="488.0" text="Plane" />
+          <TableColumn fx:id="colDate" prefWidth="323.0" text="Date" />
+          <TableColumn fx:id="colPlane" prefWidth="593.0" text="Plane" />
         </columns>
       </TableView>
-      <Button layoutX="749.0" layoutY="96.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="24.0" prefWidth="171.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" text="Save" />
-      <Button layoutX="754.0" layoutY="197.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="24.0" prefWidth="171.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" text="Update" />
-      <Button layoutX="747.0" layoutY="147.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="24.0" prefWidth="171.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" text="Delete" />
-      <Button layoutX="751.0" layoutY="243.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="24.0" prefWidth="171.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" text="Clear" />
-      <Text layoutX="97.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule Id" wrappingWidth="161.9560546875">
+      <Button layoutX="623.0" layoutY="328.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #B4BDFF; -fx-background-radius: 10;" text="Save">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="836.0" layoutY="328.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #E0F4FF; -fx-background-radius: 10;" text="Update">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="732.0" layoutY="328.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #FCAEAE; -fx-background-radius: 10;" text="Delete">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="936.0" layoutY="328.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #7f8fa6; -fx-background-radius: 10;" text="Clear" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Text layoutX="54.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule Id" wrappingWidth="161.9560546875">
          <font>
             <Font size="22.0" />
          </font></Text>
-      <TextField fx:id="textscheduleId" layoutX="264.0" layoutY="96.0" prefHeight="24.0" prefWidth="313.0" style="-fx-background-radius: 30;" />
-      <Text layoutX="97.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="124.0">
+      <TextField fx:id="textscheduleId" layoutX="188.0" layoutY="120.0" prefHeight="24.0" prefWidth="313.0" promptText="Enter id" style="-fx-background-radius: 30;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <Text layoutX="53.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="124.0">
          <font>
             <Font size="21.0" />
          </font></Text>
-      <TextField fx:id="textType" layoutX="264.0" layoutY="148.0" prefHeight="24.0" prefWidth="313.0" style="-fx-background-radius: 30;" />
-      <Text layoutX="96.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="87.07177734375">
+      <TextField fx:id="textType" layoutX="188.0" layoutY="201.0" prefHeight="31.0" prefWidth="313.0" promptText="official or others" style="-fx-background-radius: 30;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <Text layoutX="605.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="87.07177734375">
          <font>
             <Font size="22.0" />
          </font></Text>
-      <Text layoutX="96.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plane" wrappingWidth="87.07177734375">
+      <Text layoutX="605.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plane" wrappingWidth="87.07177734375">
          <font>
             <Font size="22.0" />
          </font></Text>
-      <TextField fx:id="textPlne" layoutX="264.0" layoutY="243.0" prefHeight="24.0" prefWidth="313.0" style="-fx-background-radius: 30;" />
-      <TextField fx:id="textDate" layoutX="264.0" layoutY="197.0" prefHeight="24.0" prefWidth="313.0" style="-fx-background-radius: 30;" />
-      <Button layoutX="298.0" layoutY="315.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="31.0" prefWidth="246.0" style="-fx-background-radius: 35; -fx-background-color: #7f8fa6;" text="Search" />
-      <Button layoutX="952.0" layoutY="629.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="24.0" prefWidth="76.0" style="-fx-background-radius: 10; -fx-background-color: #273c75;" text="Send" textFill="#f2e0e0" />
-      <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="757.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Documents/Downloads/icons8-save-48%20(1).png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="757.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_1.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="757.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_2.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="757.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../Users/Loshani%20Ramsha/Desktop/Final%20Project/Factory-Manage/src/main/resources/asserts/icons/img_4.png" />
-         </image>
-      </ImageView>
+      <TextField fx:id="textPlne" layoutX="703.0" layoutY="243.0" prefHeight="24.0" prefWidth="313.0" promptText="Enter Plane" style="-fx-background-radius: 30;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <TextField fx:id="textDate" layoutX="703.0" layoutY="168.0" prefHeight="24.0" prefWidth="313.0" promptText="Enter Date" style="-fx-background-radius: 30;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <Button layoutX="544.0" layoutY="113.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="31.0" prefWidth="150.0" style="-fx-background-radius: 35; -fx-background-color: #dfe4ea;" text="Search">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor></Button>
+      <Button layoutX="947.0" layoutY="699.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="24.0" prefWidth="76.0" style="-fx-background-radius: 10; -fx-background-color: #273c75;" text="Send" textFill="#f2e0e0">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor></Button>
       <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="18.0" layoutY="21.0" onMouseClicked="#lblbackOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/img_32.png" />

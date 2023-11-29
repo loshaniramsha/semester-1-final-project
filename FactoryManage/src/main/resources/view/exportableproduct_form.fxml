@@ -33,7 +33,7 @@
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="txtStates" layoutX="762.0" layoutY="279.0" prefHeight="31.0" prefWidth="274.0" promptText="confirm" />
+      <TextField fx:id="txtStates" layoutX="762.0" layoutY="279.0" prefHeight="31.0" prefWidth="274.0" promptText="confirm" style="-fx-background-radius: 20;" />
       <Text layoutX="593.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Export Qty">
          <font>
             <Font size="20.0" />
@@ -42,7 +42,7 @@
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="txtAmountExport" layoutX="235.0" layoutY="282.0" prefHeight="31.0" prefWidth="274.0" />
+      <TextField fx:id="txtAmountExport" layoutX="235.0" layoutY="282.0" prefHeight="31.0" prefWidth="274.0" style="-fx-background-radius: 20;" />
       <Button layoutX="585.0" layoutY="335.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-radius: 30; -fx-background-color: #B4BDFF;" text="Save" textFill="#252222">
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -56,7 +56,7 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <TableView fx:id="tblExportProduct" layoutX="73.0" layoutY="452.0" prefHeight="287.0" prefWidth="976.0">
+      <TableView fx:id="tblExportProduct" layoutX="73.0" layoutY="436.0" prefHeight="287.0" prefWidth="976.0">
         <columns>
           <TableColumn fx:id="colTargetId" prefWidth="157.0" text="TargetId" />
           <TableColumn fx:id="colProductId" prefWidth="163.0" text="ProductId" />
@@ -65,15 +65,15 @@
             <TableColumn fx:id="colAmountExport" prefWidth="254.0" text="Amount Export" />
         </columns>
       </TableView>
-      <ComboBox fx:id="cmbTargetId" layoutX="235.0" layoutY="140.0" prefHeight="31.0" prefWidth="274.0" promptText="select target">
+      <ComboBox fx:id="cmbTargetId" layoutX="235.0" layoutY="140.0" prefHeight="31.0" prefWidth="274.0" promptText="select target" style="-fx-background-radius: 20;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ComboBox>
-      <ComboBox fx:id="cmbProductId" layoutX="235.0" layoutY="212.0" prefHeight="31.0" prefWidth="274.0" promptText="select id">
+      <ComboBox fx:id="cmbProductId" layoutX="235.0" layoutY="212.0" prefHeight="31.0" prefWidth="274.0" promptText="select id" style="-fx-background-radius: 20;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ComboBox>
-      <ComboBox fx:id="cmbExportqty" layoutX="762.0" layoutY="211.0" prefHeight="31.0" prefWidth="274.0" promptText="select qty">
+      <ComboBox fx:id="cmbExportqty" layoutX="762.0" layoutY="211.0" prefHeight="31.0" prefWidth="274.0" promptText="select qty" style="-fx-background-radius: 20;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ComboBox>

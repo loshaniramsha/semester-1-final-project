@@ -24,7 +24,7 @@
          </font>
       </Text>
       <TextField fx:id="textPassWord" layoutX="511.0" layoutY="466.0" prefHeight="24.0" prefWidth="335.0" style="-fx-background-color: #c8d6e5;" />
-      <TextField fx:id="textUserName" layoutX="511.0" layoutY="384.0" prefHeight="24.0" prefWidth="335.0" style="-fx-background-color: #c8d6e5;" />
+      <TextField fx:id="textUserName" layoutX="510.0" layoutY="384.0" prefHeight="24.0" prefWidth="335.0" style="-fx-background-color: #c8d6e5;" />
       <Button layoutX="592.0" layoutY="594.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="36.0" prefWidth="169.0" style="-fx-background-radius: 20; -fx-background-color: #028f76;" text="Login" textFill="WHITE" translateX="10.0" />
       <Text fill="#252323" layoutX="507.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
          <font>
@@ -36,8 +36,11 @@
             <Font size="23.0" />
          </font>
       </Text>
-      <Label layoutX="700.0" layoutY="507.0" onMouseClicked="#lblCreateNewAccount" prefHeight="16.0" prefWidth="164.0" text="Create New Account" textFill="#d01111" />
-      <AnchorPane fx:id="ancCreateAcount" layoutX="458.0" layoutY="135.0" prefHeight="544.0" prefWidth="443.0" style="-fx-background-color: #CAD3C8; -fx-background-radius: 30;">
+      <Label layoutX="700.0" layoutY="507.0" onMouseClicked="#lblCreateNewAccount" prefHeight="21.0" prefWidth="181.0" text="Create New Account" textFill="#bc1b1b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <AnchorPane fx:id="ancCreateAcount" layoutX="462.0" layoutY="138.0" prefHeight="544.0" prefWidth="443.0" style="-fx-background-color: #CAD3C8; -fx-background-radius: 30;">
          <children>
             <Text layoutX="27.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:-" wrappingWidth="103.7294921875" />
 

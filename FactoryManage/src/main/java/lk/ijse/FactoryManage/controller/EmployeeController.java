@@ -4,12 +4,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import lk.ijse.FactoryManage.Regex.Regex;
 import lk.ijse.FactoryManage.dto.EmployeeDto;
 import lk.ijse.FactoryManage.dto.ScheduleDto;
 import lk.ijse.FactoryManage.dto.UserDto;
@@ -18,6 +20,7 @@ import lk.ijse.FactoryManage.model.ScheduleModel;
 import lk.ijse.FactoryManage.model.UserModel;
 
 import java.io.IOException;
+import java.net.URL;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -67,8 +70,10 @@ public class EmployeeController {
     private void setCellValueFactory() {
         colEmoId.setCellValueFactory(new PropertyValueFactory<>("employeeId"));
         colName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        //colName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colTelNum.setCellValueFactory(new PropertyValueFactory<>("phone"));
         colType.setCellValueFactory(new PropertyValueFactory<>("type"));
+       // colType.setCellValueFactory(new PropertyValueFactory<>("type"));
         colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
         colUserId.setCellValueFactory(new PropertyValueFactory<>("userId"));
         colScheduleId.setCellValueFactory(new PropertyValueFactory<>("scheduleId"));
@@ -198,12 +203,36 @@ public class EmployeeController {
         String phoneNumber = txtPhoneNumber.getText();
         String userId = cmbUserId.getValue().toString();
         String scheduleId = cmbScheduleId.getValue().toString();
-       var Dto = new EmployeeDto(employeeId,name,type,email,phoneNumber,userId,scheduleId);
-        boolean isSaved= EmployeeModel.saveEmployee(Dto);
-        if (isSaved){
-            new Alert(Alert.AlertType.CONFIRMATION,"Saved").show();
-            clearField();
+
+
+        if(Regex.getMobilePattern().matcher(txtPhoneNumber.getText()).matches()){
+            if(Regex.getEmailPattern().matcher(txtEmail.getText()).matches()){
+                if(Regex.getNamePattern().matcher(txtName.getText()).matches()){
+
+                    var Dto = new EmployeeDto(employeeId,name,type,email,phoneNumber,userId,scheduleId);
+                    boolean isSaved= EmployeeModel.saveEmployee(Dto);
+                    if (isSaved){
+                        new Alert(Alert.AlertType.CONFIRMATION,"Saved").show();
+                        clearField();
+                    }
+
+                }else {
+                    new Alert(Alert.AlertType.WARNING,"Invalid Contact Number").show();
+                }
+
+            } else {}
+            new Alert(Alert.AlertType.WARNING,"Invalid Contact Number").show();
+
         }
+        else{
+            new Alert(Alert.AlertType.WARNING,"Invalid Contact Number").show();
+
+        }
+
+
+
+
+
     }
 
     private void clearField() {
@@ -216,6 +245,19 @@ public class EmployeeController {
         cmbScheduleId.getSelectionModel().clearSelection();
     }
 
-    public void lblBackOnAction(MouseEvent mouseEvent) {
+    public void lblBackOnAction(MouseEvent mouseEvent) throws Exception {
+
+        URL resource = getClass().getResource("/view/dashboard2_form.fxml");
+        assert resource != null;
+        try {
+            Parent load = FXMLLoader.load(resource);
+            root.getChildren().clear();
+            root.getChildren().add(load);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
-}
+    }
+

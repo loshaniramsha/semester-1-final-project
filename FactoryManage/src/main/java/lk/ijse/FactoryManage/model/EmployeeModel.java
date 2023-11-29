@@ -17,8 +17,8 @@ public class EmployeeModel {
         String sql = "INSERT INTO employee VALUES(?,?,?,?,?,?,?)";
         PreparedStatement pstm = connection.prepareStatement(sql);
         pstm.setObject(1, dto.getEmployeeId());
-        pstm.setObject(2, dto.getType());
-        pstm.setObject(3, dto.getName());
+        pstm.setObject(2, dto.getName());
+        pstm.setObject(3, dto.getType());
         pstm.setObject(4, dto.getEmail());
         pstm.setObject(5, dto.getPhone());
        pstm.setObject(6,dto.getUserId());

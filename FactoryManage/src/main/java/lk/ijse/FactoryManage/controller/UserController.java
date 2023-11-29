@@ -298,22 +298,24 @@ public class UserController {
 
     public void lblBackOnAction(MouseEvent mouseEvent) throws Exception{
 
-      //  setForm("/view/dashboard2_form.fxml");
+        URL resource = getClass().getResource("/view/dashboard2_form.fxml");
+        assert resource != null;
+        try {
+            Parent load = FXMLLoader.load(resource);
+            root.getChildren().clear();
+            root.getChildren().add(load);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
-//    private void setForm(String form) {
-//        URL resource = getClass().getResource(form);
-//        assert resource != null;
-//        try {
-//            Parent load = FXMLLoader.load(resource);
-//            changePain.getChildren().clear();
-//            changePain.getChildren().add(load);
-//
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
 
-}
+    }
+
+
+
+
 
 //^(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$

@@ -8,6 +8,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
+import lk.ijse.FactoryManage.dto.ScheduleDto;
+import lk.ijse.FactoryManage.model.EmployeeModel;
+import lk.ijse.FactoryManage.model.ProductModel;
+import lk.ijse.FactoryManage.model.ScheduleModel;
 
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -16,6 +20,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -27,6 +32,20 @@ public class Dashboard2Controller implements Initializable {
     public Label lblTime;
     public Label lblDate;
 
+
+
+    private void setValues() throws Exception {
+        lblEmployee.setText(String.valueOf(EmployeeModel.getAllEmployees().size()));
+        lblProduct.setText(String.valueOf(ProductModel.getAllProductIds().size()));
+
+        List<ScheduleDto> allSchedules = ScheduleModel.getAllSchedules();
+        for (ScheduleDto schedule : allSchedules) {
+            lblSchedulePlane.setText(String.valueOf(schedule.getPlane()));
+            lblScheduleDate.setText(String.valueOf(schedule.getDate()));
+        }
+
+    }
+
     public void lblBackOnAction(MouseEvent mouseEvent) {
     }
 
@@ -36,6 +55,11 @@ public class Dashboard2Controller implements Initializable {
         System.out.println(LocalTime.now());
         System.out.println(LocalDateTime.now());
         loadDateandTime();
+        try {
+            setValues();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void loadDateandTime() {
