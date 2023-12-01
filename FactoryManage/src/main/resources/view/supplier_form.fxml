@@ -27,12 +27,15 @@
          <font>
             <Font size="21.0" />
          </font></Text>
-      <TextField fx:id="textSupId" layoutX="211.0" layoutY="131.0" prefHeight="24.0" prefWidth="250.0" style="-fx-background-radius: 30;" />
+      <TextField fx:id="textSupId" layoutX="211.0" layoutY="131.0" prefHeight="24.0" prefWidth="250.0" promptText="enter id" style="-fx-background-radius: 30;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
       <Text layoutX="63.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="137.77978515625">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="textName" layoutX="211.0" layoutY="206.0" prefHeight="24.0" prefWidth="250.0" style="-fx-background-radius: 30;">
+      <TextField fx:id="textName" layoutX="211.0" layoutY="206.0" prefHeight="24.0" prefWidth="250.0" promptText="enter name" style="-fx-background-radius: 30;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></TextField>
@@ -41,7 +44,7 @@
             <Font size="20.0" />
          </font></Text>
       <Label layoutX="34.0" layoutY="389.0" prefHeight="338.0" prefWidth="1009.0" style="-fx-background-color: #f5f6fa; -fx-background-radius: 30;" />
-      <TextField fx:id="textAmountbrought" layoutX="709.0" layoutY="176.0" prefHeight="31.0" prefWidth="283.0" style="-fx-background-radius: 30;">
+      <TextField fx:id="textAmountbrought" layoutX="709.0" layoutY="176.0" prefHeight="31.0" prefWidth="283.0" promptText="enter amount" style="-fx-background-radius: 30;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></TextField>
@@ -49,7 +52,7 @@
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="textDate" layoutX="714.0" layoutY="236.0" prefHeight="31.0" prefWidth="283.0" style="-fx-background-radius: 30;">
+      <TextField fx:id="textDate" layoutX="714.0" layoutY="236.0" prefHeight="31.0" prefWidth="283.0" promptText="date" style="-fx-background-radius: 30;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></TextField>

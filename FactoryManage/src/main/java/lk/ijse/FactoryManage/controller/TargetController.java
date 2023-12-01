@@ -128,18 +128,18 @@ public class TargetController {
         }
     }
 
-    public void saveOnAction(ActionEvent event) throws Exception {
-        String targetId = textTargetId.getText();
-        String targetAmount = textTargetAmount.getText();
-        String receiveDate = textReceiveDate.getText();
-        String sendDate = textSendDate.getText();
-        var Dto=new TargetDto(targetId,targetAmount,receiveDate,sendDate);
-        boolean isSaved= TargetModel.saveTarget(Dto);
-        if (isSaved) {
-            new Alert(Alert.AlertType.CONFIRMATION, "Saved").show();
-            clearField();
-        }
-    }
+//    public void saveOnAction(ActionEvent event) throws Exception {
+//        String targetId = textTargetId.getText();
+//        String targetAmount = textTargetAmount.getText();
+//        String receiveDate = textReceiveDate.getText();
+//        String sendDate = textSendDate.getText();
+//        var Dto=new TargetDto(targetId,targetAmount,receiveDate,sendDate);
+//        boolean isSaved= TargetModel.saveTarget(Dto);
+//        if (isSaved) {
+//            new Alert(Alert.AlertType.CONFIRMATION, "Saved").show();
+//            clearField();
+//        }
+//    }
     private void clearField() {
         textTargetId.clear();
         textTargetAmount.clear();
@@ -183,5 +183,24 @@ public class TargetController {
 
     }
 
+    public void save(ActionEvent actionEvent) throws Exception {
+        String targetId = textTargetId.getText();
+        String targetAmount = textTargetAmount.getText();
+        String receiveDate = textReceiveDate.getText();
+        String sendDate = textSendDate.getText();
+        var Dto=new TargetDto(targetId,targetAmount,receiveDate,sendDate);
+        boolean isSaved= TargetModel.saveTarget(Dto);
+        if (isSaved) {
+            new Alert(Alert.AlertType.CONFIRMATION, "Saved").show();
+            clearField();
+        }
     }
+
+    public void saveOnAction(ActionEvent actionEvent) {
+    }
+
+//    public void searchOnAction(ActionEvent actionEvent) {
+//    }
+}
+
 

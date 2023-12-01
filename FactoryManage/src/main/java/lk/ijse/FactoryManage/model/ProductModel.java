@@ -111,12 +111,13 @@ public class ProductModel {
 
     public boolean updateMadeProduct(Madeproductdto dto) throws Exception{
         Connection connection=DbConection.getInstance().getConnection();
-        String sql="UPDATE madeproduct SET targetAmount=?,completeAmount=? WHERE productId=? AND employeeId=?";
+        String sql="UPDATE madeproduct SET targetAmount=?,targetAmount=? WHERE productId=? ";
+      //  String sql="UPDATE madeproduct SET targetAmount=?,completeAmount=? WHERE productId=? AND employeeId=?";
         PreparedStatement pstm=connection.prepareStatement(sql);
         pstm.setObject(1,dto.getTargetAmount());
-        pstm.setObject(2,dto.getCompleteAmount());
+      //  pstm.setObject(2,dto.getCompleteAmount());
         pstm.setObject(3,dto.getProductId());
-        pstm.setObject(4,dto.getEmployeeId());
+     //   pstm.setObject(4,dto.getEmployeeId());
         boolean isUpdated=pstm.executeUpdate()>0;
         return isUpdated;
     }

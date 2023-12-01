@@ -171,16 +171,16 @@ public class CountmaterialController {
     }
 
     public void cmbMaterialOnAction(ActionEvent event) throws Exception {
-        URL resource = getClass().getResource("/view/dashboard2_form.fxml");
-        assert resource != null;
-        try {
-            Parent load = FXMLLoader.load(resource);
-            root.getChildren().clear();
-            root.getChildren().add(load);
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+//        URL resource = getClass().getResource("/view/dashboard2_form.fxml");
+//        assert resource != null;
+//        try {
+//            Parent load = FXMLLoader.load(resource);
+//            root.getChildren().clear();
+//            root.getChildren().add(load);
+//
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
 
     }
 

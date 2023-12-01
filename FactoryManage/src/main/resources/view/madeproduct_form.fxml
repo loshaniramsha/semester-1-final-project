@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -36,7 +37,10 @@
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="txtCompletAmount" layoutX="777.0" layoutY="258.0" prefHeight="24.0" prefWidth="276.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txtCompletAmount" layoutX="777.0" layoutY="258.0" prefHeight="24.0" prefWidth="276.0" promptText="enter amount" style="-fx-background-radius: 20;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
       <Label layoutX="42.0" layoutY="406.0" prefHeight="347.0" prefWidth="1058.0" style="-fx-background-radius: 35; -fx-background-color: #f1f2f6;" />
       <TableView fx:id="tblMadeProduct" layoutX="75.0" layoutY="448.0" prefHeight="270.0" prefWidth="995.0">
         <columns>
@@ -46,14 +50,38 @@
             <TableColumn fx:id="colCompleteAmount" prefWidth="249.0" text="Complete Amount" />
         </columns>
       </TableView>
-      <Button layoutX="613.0" layoutY="333.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #B4BDFF; -fx-background-radius: 20;" text="Save" />
-      <Button layoutX="729.0" layoutY="334.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #FCAEAE; -fx-background-radius: 20;" text="Delete" />
-      <Button layoutX="552.0" layoutY="105.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="31.0" prefWidth="162.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 20;" text="Search" />
-      <Button layoutX="850.0" layoutY="334.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #E0F4FF; -fx-background-radius: 20;" text="Update" />
-      <Button layoutX="970.0" layoutY="336.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #7f8fa6; -fx-background-radius: 20;" text="Clear" textFill="#fff7f7" />
-      <ComboBox fx:id="cmbTagetamount" layoutX="178.0" layoutY="189.0" prefHeight="31.0" prefWidth="305.0" style="-fx-background-radius: 20;" />
-      <ComboBox fx:id="cmbProductId" layoutX="178.0" layoutY="107.0" prefHeight="31.0" prefWidth="305.0" style="-fx-background-radius: 20;" />
-      <ComboBox fx:id="cmbEmployeeId" layoutX="774.0" layoutY="186.0" prefHeight="31.0" prefWidth="276.0" style="-fx-background-radius: 20;" />
+      <Button layoutX="613.0" layoutY="333.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #B4BDFF; -fx-background-radius: 20;" text="Save">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="729.0" layoutY="334.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #FCAEAE; -fx-background-radius: 20;" text="Delete">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="552.0" layoutY="105.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="31.0" prefWidth="162.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 20;" text="Search">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor></Button>
+      <Button layoutX="850.0" layoutY="334.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #E0F4FF; -fx-background-radius: 20;" text="Update">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="970.0" layoutY="336.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #7f8fa6; -fx-background-radius: 20;" text="Clear" textFill="#fff7f7">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <ComboBox fx:id="cmbTagetamount" layoutX="178.0" layoutY="189.0" prefHeight="31.0" prefWidth="305.0" promptText="select amount" style="-fx-background-radius: 20;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <ComboBox fx:id="cmbProductId" layoutX="178.0" layoutY="107.0" prefHeight="31.0" prefWidth="305.0" promptText="select id" style="-fx-background-radius: 20;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <ComboBox fx:id="cmbEmployeeId" layoutX="774.0" layoutY="186.0" prefHeight="31.0" prefWidth="276.0" promptText="select id" style="-fx-background-radius: 20;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
       <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="24.0" layoutY="14.0" onMouseClicked="#lblbackOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/img_32.png" />
