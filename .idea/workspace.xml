@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f9471c-49df-46b5-a2f0-ea3fdfa7e3a3" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/report/Employee.jrxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/AppInitializerWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/AppInitializerWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/CountmaterialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/CountmaterialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/TargetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/TargetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/model/ProductModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/model/ProductModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/countmaterial_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/countmaterial_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/employee_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/employee_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/exportableproduct_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/exportableproduct_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/madeproduct_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/madeproduct_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/material_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/material_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/product_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/product_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/supplier_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/supplier_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/target_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/resources/view/target_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FactoryManage/src/main/java/lk/ijse/FactoryManage/controller/ProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,29 +36,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/working directory/sem 1 final/FactoryManage new/FactoryManage new Loshani GDSE67.zip",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "two.files.diff.last.used.folder": "C:/working directory/sem 1 final/FactoryManage new/FactoryManage new Loshani GDSE67.zip",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/working directory/sem 1 final/FactoryManage new/FactoryManage/src/main/resources/report&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;two.files.diff.last.used.folder&quot;: &quot;C:/working directory/sem 1 final/FactoryManage new/FactoryManage new Loshani GDSE67.zip&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\working directory\sem 1 final\FactoryManage new\FactoryManage\src\main\resources\report" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="AppInitializerWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lk.ijse.FactoryManage.AppInitializerWrapper" />
@@ -111,7 +107,15 @@
       <workItem from="1701361992447" duration="1640000" />
       <workItem from="1701364768773" duration="3323000" />
       <workItem from="1701392431964" duration="6039000" />
-      <workItem from="1701419902499" duration="434000" />
+      <workItem from="1701419902499" duration="851000" />
+      <workItem from="1701421857549" duration="130000" />
+      <workItem from="1701433430850" duration="1139000" />
+      <workItem from="1701452732480" duration="2589000" />
+      <workItem from="1701456567635" duration="392000" />
+      <workItem from="1701489154089" duration="2937000" />
+      <workItem from="1701531139190" duration="179000" />
+      <workItem from="1701534272226" duration="33000" />
+      <workItem from="1701534594013" duration="533000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -129,11 +133,30 @@
       <option name="project" value="LOCAL" />
       <updated>1701277617860</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <option name="closed" value="true" />
+      <created>1701420519171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701420519171</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />

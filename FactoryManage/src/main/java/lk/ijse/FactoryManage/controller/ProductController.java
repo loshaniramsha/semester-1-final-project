@@ -213,7 +213,7 @@ public class ProductController {
 
 
     public void reportOnAction(ActionEvent actionEvent) throws Exception {
-        InputStream resourceAsStream = getClass().getResourceAsStream("/report/products.jrxml");
+        InputStream resourceAsStream = getClass().getResourceAsStream("/report/Products.jrxml");
         JasperDesign load = JRXmlLoader.load(resourceAsStream);
         JasperReport jasperReport = JasperCompileManager.compileReport(load);
         JasperPrint jasperPrint = JasperFillManager.fillReport(
