@@ -34,11 +34,11 @@
             <Cursor fx:constant="OPEN_HAND" />
          </cursor></Button>
       <Label layoutX="75.0" layoutY="359.0" prefHeight="344.0" prefWidth="977.0" style="-fx-background-radius: 40; -fx-background-color: #f5f6fa;" />
-      <Text layoutX="575.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount Used">
+      <Text layoutX="575.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount Used">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField fx:id="txtAmountUsed" layoutX="740.0" layoutY="205.0" prefHeight="31.0" prefWidth="283.0" promptText="enter amount use" style="-fx-background-radius: 20;">
+      <TextField fx:id="txtAmountUsed" layoutX="740.0" layoutY="186.0" prefHeight="31.0" prefWidth="283.0" promptText="enter amount use" style="-fx-background-radius: 20;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></TextField>

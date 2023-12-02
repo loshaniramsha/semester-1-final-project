@@ -34,7 +34,7 @@ public class Mail implements Runnable{
     }
 
     public void outMail() throws MessagingException, IOException {
-        String from = "loshaniramsha01@gmail.com"; //sender's email address
+        String from = "loshaniramsha01@gmail.com"; //sender's email
         String host = "localhost";
 
         Properties properties = new Properties();
